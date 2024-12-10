@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets Makers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Markets Makers</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="darkModeToggle">Toggle Dark Mode</button>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Markets Makers</h2>
+        <p>Your trusted partner in financial markets.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in providing expert insights and solutions for market trends and investments.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Consulting</h3>
+                <p>Expert advice to navigate market challenges.</p>
+            </div>
+            <div class="card">
+                <h3>Market Research</h3>
+                <p>In-depth analysis to keep you ahead.</p>
+            </div>
+            <div class="card">
+                <h3>Portfolio Management</h3>
+                <p>Customized investment strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="slider">
+            <div class="slide active">"Excellent service and insightful advice!" - Srinivas Naren </div>
+            <div class="slide">"Highly recommend for market analysis." - Jane Smith</div>
+            <div class="slide">"Helped me achieve my investment goals!" - Alex Johnson</div>
+        </div>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="http://localhost:3000/send-email" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Markets Makers. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
